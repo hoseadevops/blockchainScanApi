@@ -13,9 +13,13 @@ def mkdir(file_path):
 
 class contract(object):
 
-  def getsourcecode(self, project, address):
+  def getsourcecode(self, chain, project, address):
+    print(chain, project, address)
+    if chain == 'bsc':
+      url = "https://api.bscscan.com/api"
+    else:
+      url = "https://api.etherscan.io/api"
     
-    url = "https://api.etherscan.io/api"
     API_KEY = os.environ["API_KEY"]
     params = {
       "module": "contract",
