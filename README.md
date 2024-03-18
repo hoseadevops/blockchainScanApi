@@ -13,13 +13,13 @@
 ### Usage
 
 ```
+
 # 导入 API KEY ( eth || eth )
 export API_KEY=
 
-# 多文件
-
-python3 contract.py getsourcecode bsc '"renzoprotocol"' '"0x6921c63fcf9796c9733690804e116be3520ba468"'
-python3 contract.py getsourcecode eth '"renzoprotocol"' '"0x6921c63fcf9796c9733690804e116be3520ba468"'
+# get code
+python3 contract.py getsourcecode bsc_main '"renzoprotocol"' '"0x6921c63fcf9796c9733690804e116be3520ba468"'
+python3 contract.py getsourcecode eth_main '"renzoprotocol"' '"0x6921c63fcf9796c9733690804e116be3520ba468"'
 
 
 ```

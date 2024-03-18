@@ -7,6 +7,7 @@ import requests
 
 # 创建相对路径文件夹
 def mkdir(file_path):
+  
   directory = os.path.dirname(file_path)
   if not os.path.exists(directory):
     os.makedirs(directory)
@@ -17,7 +18,7 @@ class contract(object):
     
     print("DEBUG: ", chain, project, address)
     
-    if chain == 'bsc':
+    if chain == 'bsc_main':
       url = "https://api.bscscan.com/api"
     else:
       url = "https://api.etherscan.io/api"
